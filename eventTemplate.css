@@ -4,7 +4,9 @@
   --et-color-gray: #555555;
   --et-color-primary: #d0122b;
 }
-
+.eventTemplate * {
+  transition: all 0.3s ease-in-out;
+}
 .eventTemplate {
   max-width: var(--et-container-width);
   width: 100%;
