@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/*"
+to = "seoul2026.html"
+status = 200
