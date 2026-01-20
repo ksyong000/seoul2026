@@ -17,7 +17,7 @@
   gap: 120px;
 }
 .eventTemplate .et_information {
-  flex: 0 0 520px;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 64px;
