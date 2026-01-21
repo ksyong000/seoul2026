@@ -34,6 +34,9 @@
 .eventTemplate .et_sectionWrap section {
   padding-bottom: 120px;
 }
+.eventTemplate .et_sectionWrap .et_section:last-of-type{
+  padding-bottom: 0;
+}
 .eventTemplate .et_information .et_titleWrap {
   display: flex;
   flex-direction: column;
@@ -126,15 +129,17 @@
   padding: 10px 16px;
   background: var(--et-color-black);
   position: absolute;
+  z-index:4;
   bottom: 40px;
   right: 32px;
 }
 .eventTemplate .et_productWrap .et_product img {
   transition: transform 0.3s ease-in-out;
 }
-.eventTemplate .et_productWrap .et_product img:hover {
-  transform: scale(1.1);
+.eventTemplate .et_productWrap .et_product button:hover + img {
+  transform: scale(0.98);
 }
+
 /* 유의사항 */
 .eventTemplate .et_notice strong {
   font-weight: 700;
@@ -204,11 +209,11 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(0deg);
   transition: all 0.3s ease-in-out;
 }
 .eventTemplate .et_notice a.active span:after {
-  transform: translate(-50%, -50%) rotate(0deg);
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 @media (max-width: 768px) {
@@ -232,7 +237,6 @@
   .eventTemplate .et_sectionWrap .et_section:last-of-type {
     position: relative;
     z-index: 4;
-    padding-bottom: 0;
   }
   .eventTemplate .et_productWrap {
     grid-template-columns: repeat(2, 1fr);
