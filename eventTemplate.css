@@ -133,10 +133,7 @@
   bottom: 40px;
   right: 32px;
 }
-.eventTemplate .et_productWrap .et_product img {
-  transition: transform 0.3s ease-in-out;
-}
-.eventTemplate .et_productWrap .et_product button:hover + img {
+.eventTemplate .et_productWrap .et_product button:hover {
   transform: scale(0.98);
 }
 
