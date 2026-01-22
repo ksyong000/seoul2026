@@ -1,4 +1,5 @@
 :root {
+  --et-banner-width: 1920px;
   --et-container-width: 1280px;
   --et-color-black: #1d1d1d;
   --et-color-gray: #555555;
@@ -7,7 +8,22 @@
 .eventTemplate * {
   transition: all 0.3s ease-in-out;
 }
-.eventTemplate {
+.eventTemplate .et_banner {
+  max-width: var(--et-banner-width);
+  width: 100%;
+  margin: auto;
+}
+.eventTemplate .et_banner .yt-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+}
+.eventTemplate .et_banner .yt-wrap iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.eventTemplate .et_container {
   max-width: var(--et-container-width);
   width: 100%;
   margin: auto;
@@ -16,6 +32,8 @@
   display: flex;
   gap: 120px;
 }
+
+
 .eventTemplate .et_information {
   flex: 1;
   display: flex;
@@ -84,6 +102,9 @@
   font-weight: 400;
   color: var(--et-color-gray);
 }
+
+
+.et_banner {margin:0 auto;}
 
 /* 상품소개 */
 .eventTemplate .et_productWrap {
@@ -261,5 +282,56 @@
   .eventTemplate .et_productWrap {
     padding-top: 182px;
     grid-template-columns: 1fr;
+  }
+   .eventTemplate .et_productWrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+
+  /* 타이틀 영역 */
+  .eventTemplate .et_information .et_titleWrap .et_title {
+    font-size: 52px;
+  }
+
+  .eventTemplate .et_information .et_titleWrap .et_description {
+    font-size: 20px;
+  }
+
+  /* 섹션 텍스트 */
+  .eventTemplate .et_sectionWrap .et_section span {
+    font-size: 12px;
+  }
+
+  .eventTemplate .et_sectionWrap .et_section p {
+    font-size: 18px;
+  }
+
+  /* 날짜 */
+  .eventTemplate .et_information .et_date strong,
+  .eventTemplate .et_information .et_date p {
+    font-size: 16px;
+  }
+
+  /* 상품 카드 */
+  .eventTemplate .et_productWrap .et_product .et_product_content strong {
+    font-size: 32px;
+  }
+
+  .eventTemplate .et_productWrap .et_product .et_product_list span {
+    font-size: 16px;
+  }
+
+  .eventTemplate .et_productWrap .et_product button {
+    font-size: 14px;
+  }
+
+  /* 유의사항 */
+  .eventTemplate .et_notice strong {
+    font-size: 13px;
+  }
+
+  .eventTemplate .et_notice li {
+    font-size: 11px;
   }
 }
