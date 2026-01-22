@@ -5,19 +5,21 @@
   --et-color-gray: #555555;
   --et-color-primary: #d0122b;
 }
-body{overflow-x:unset !important;overflow:unset !important}
-.eventTemplate .et_sectionWrap .et_section p,
+body {
+  overflow-x: unset !important;
+  overflow: unset !important;
+}
+/* .eventTemplate .et_sectionWrap .et_section p,
 .eventTemplate .et_sectionWrap .et_section span,
 .eventTemplate .et_sectionWrap .et_section strong,
 .eventTemplate .et_sectionWrap .et_section ul {
-  /* color: inherit !important; */
+  color: inherit !important;
   font-size: inherit !important;
   font-weight: inherit !important;
-}
-
+} */
 
 .eventTemplate {
-  text-align: left!important;
+  text-align: left !important;
 }
 .eventTemplate * {
   transition: all 0.3s ease-in-out;
@@ -45,9 +47,8 @@ body{overflow-x:unset !important;overflow:unset !important}
 .eventTemplate .et_eventWrap {
   display: flex;
   gap: 120px;
-  margin-top:180px;
+  margin-top: 180px;
 }
-
 
 .eventTemplate .et_information {
   flex: 1;
@@ -55,7 +56,7 @@ body{overflow-x:unset !important;overflow:unset !important}
   flex-direction: column;
   gap: 64px;
   position: sticky;
-  top: 0;
+  top: 50px;
   height: 600px;
 }
 .eventTemplate .et_sectionWrap {
@@ -65,14 +66,14 @@ body{overflow-x:unset !important;overflow:unset !important}
   flex-direction: column;
 }
 .eventTemplate .et_sectionWrap .et_section {
-  padding-bottom: 120px!important;
+  padding-bottom: 120px !important;
 }
 
 /* .eventTemplate .et_sectionWrap .et_section:first-of-type {
   padding-bottom: 0;
 } */
 
-.eventTemplate .et_sectionWrap .et_section:last-of-type{
+.eventTemplate .et_sectionWrap .et_section:last-of-type {
   padding-bottom: 0;
 }
 .eventTemplate .et_information .et_titleWrap {
@@ -97,7 +98,7 @@ body{overflow-x:unset !important;overflow:unset !important}
   font-size: 16px;
   font-weight: 600;
   color: var(--et-color-primary);
-  margin-top: 16px!important;
+  margin-top: 16px !important;
   display: block;
 }
 .eventTemplate .et_sectionWrap .et_section p {
@@ -123,8 +124,9 @@ body{overflow-x:unset !important;overflow:unset !important}
   color: var(--et-color-gray);
 }
 
-
-.et_banner {margin:0 auto;}
+.et_banner {
+  margin: 0 auto;
+}
 
 /* 상품소개 */
 .eventTemplate .et_productWrap {
@@ -170,7 +172,7 @@ body{overflow-x:unset !important;overflow:unset !important}
   padding: 10px 16px;
   background: var(--et-color-black);
   position: absolute;
-  z-index:4;
+  z-index: 4;
   bottom: 40px;
   right: 32px;
 }
@@ -182,9 +184,9 @@ body{overflow-x:unset !important;overflow:unset !important}
 .eventTemplate .caution-area {
   padding-top: 2rem;
   padding-bottom: 4rem;
-  background:#fff;
-  position:relative;
-  z-index:5;
+  background: #fff;
+  position: relative;
+  z-index: 5;
 }
 .eventTemplate .caution-area .title {
   color: #999;
@@ -193,7 +195,8 @@ body{overflow-x:unset !important;overflow:unset !important}
   font-weight: 700;
   line-height: 150%;
   letter-spacing: 0.09375;
-  background: url(https://image.prospecs.com/front/images/common/promo/i_caution_minus.svg) center right/1rem no-repeat;
+  background: url(https://image.prospecs.com/front/images/common/promo/i_caution_minus.svg)
+    center right/1rem no-repeat;
   cursor: pointer;
   text-align: left;
 }
@@ -210,7 +213,6 @@ body{overflow-x:unset !important;overflow:unset !important}
   margin-left: 1rem;
   text-indent: -0.5rem;
   word-break: auto-phrase;
-
 }
 .eventTemplate .caution-area ul li::before {
   display: inline-block;
@@ -224,17 +226,17 @@ body{overflow-x:unset !important;overflow:unset !important}
   margin-top: 0;
 }
 .eventTemplate .caution-area.closed .title {
-  background: url(https://image.prospecs.com/front/images/common/promo/i_caution_plus.svg) center right/1rem no-repeat;
+  background: url(https://image.prospecs.com/front/images/common/promo/i_caution_plus.svg)
+    center right/1rem no-repeat;
 }
 
-
-
-@media all and (min-width:581px) and (max-width: 768px) {
+@media all and (min-width: 581px) and (max-width: 768px) {
   .et_container {
     padding: 0 16px 16px;
   }
   .eventTemplate .et_eventWrap {
     flex-direction: column;
+    gap: 100px;
   }
   .eventTemplate .et_sectionWrap {
     max-width: 100%;
@@ -244,8 +246,9 @@ body{overflow-x:unset !important;overflow:unset !important}
   .eventTemplate .et_sectionWrap .et_section {
     position: sticky;
     top: 0;
-    z-index: 2;
     background: #fff;
+    padding: 3.5rem 0 !important;
+    z-index: 2;
   }
   .eventTemplate .et_sectionWrap .et_section:last-of-type {
     position: relative;
@@ -253,58 +256,8 @@ body{overflow-x:unset !important;overflow:unset !important}
   }
   .eventTemplate .et_productWrap {
     grid-template-columns: repeat(2, 1fr);
-    gap:8px;
+    gap: 8px;
   }
-}
-@media all and (max-width: 580px) {
-  .eventTemplate .et_information .et_titleWrap .et_title {
-    font-size: 32px;
-  }
-  .eventTemplate .et_eventWrap {
-    gap: 96px;
-    flex-direction: column;
-  }
-  .eventTemplate .et_information {
-    position:relative;
-    height: inherit;
-    flex: 1;
-    gap: 40px;
-  }
-  .eventTemplate .et_information .et_titleWrap .et_description {
-    font-size: 20px;
-  }
-  .eventTemplate .et_information .et_date strong,
-  .eventTemplate .et_information .et_date p {
-    font-size: 16px;
-  }
-  .eventTemplate .et_productWrap {
-    padding-top: 182px;
-    grid-template-columns: 1fr;
-  }
-  .eventTemplate .et_productWrap .et_product .et_product_content {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  z-index: 1;
-}
-.eventTemplate .et_productWrap .et_product .et_product_list {
-  display: flex;
-  gap: 8px;
-  margin-top: 6px;
-}
-.eventTemplate .et_sectionWrap .et_section{
-  position:sticky;
-  top:0;
-  background:#fff;
-  z-index:2;
-}
-.eventTemplate .et_sectionWrap .et_section.last-section{
-  position:relative;
-  z-index:4;
-}
-}
-@media (min-width: 581px) and (max-width: 768px) {
-
   /* 타이틀 영역 */
   .eventTemplate .et_information .et_titleWrap .et_title {
     font-size: 52px;
@@ -340,21 +293,19 @@ body{overflow-x:unset !important;overflow:unset !important}
 
   .eventTemplate .et_productWrap .et_product button {
     font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    padding: 6px 12px;
+    background: var(--et-color-black);
+    position: absolute;
+    z-index: 4;
+    bottom: 16px;
+    right: 16px;
   }
-
-
-  .eventTemplate .et_productWrap .et_product button {
-  font-size: 13px;
-  font-weight: 500;
-  color: #fff;
-  padding: 6px 12px;
-  background: var(--et-color-black);
-  position: absolute;
-  z-index:4;
-  bottom: 16px;
-  right: 16px;
-}
-
+  .eventTemplate .et_sectionWrap .et_section.last-section {
+    position: relative;
+    z-index: 4;
+  }
   /* 유의사항 */
   .eventTemplate .caution-area strong {
     font-size: 13px;
@@ -362,5 +313,69 @@ body{overflow-x:unset !important;overflow:unset !important}
 
   .eventTemplate .caution-area li {
     font-size: 11px;
+  }
+}
+
+@media all and (max-width: 580px) {
+  .eventTemplate .et_information .et_titleWrap .et_title {
+    font-size: 32px;
+  }
+  .eventTemplate .et_eventWrap {
+    gap: 0;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .eventTemplate .et_information {
+    position: relative;
+    height: inherit;
+    flex: 1;
+    gap: 40px;
+    padding: 5rem 1.2rem 2.5rem;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+  .eventTemplate .et_information .et_titleWrap .et_description {
+    font-size: 20px;
+  }
+  .eventTemplate .et_information .et_date strong,
+  .eventTemplate .et_information .et_date p {
+    font-size: 16px;
+  }
+  .eventTemplate .et_productWrap {
+    padding: 5rem 1.2rem 2.5rem;
+    grid-template-columns: 1fr;
+  }
+  .eventTemplate .et_productWrap .et_product .et_product_content {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 1;
+  }
+  .eventTemplate .et_productWrap .et_product .et_product_list {
+    display: flex;
+    gap: 8px;
+    margin-top: 6px;
+  }
+  .eventTemplate .et_sectionWrap {
+    padding: 0 1.2rem;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+  .eventTemplate .et_sectionWrap .et_section {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    padding: 3.5rem 0 !important;
+    z-index: 2;
+  }
+  .eventTemplate .et_sectionWrap .et_section.last-section {
+    position: relative;
+    z-index: 4;
+  }
+  .eventTemplate .et_sectionWrap .et_section span {
+    font-size: 18px;
+  }
+  .eventTemplate .et_sectionWrap .et_section p {
+    font-size: 16px;
   }
 }

@@ -1,81 +1,80 @@
 <!DOCTYPE html>
 <html lang="kr">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+  />
 
-
-    <link rel="stylesheet" href="eventTemplate.css" />
+  <link rel="stylesheet" href="eventTemplate.css" />
 
   <style>
-.video-wrap {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+    .video-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
 
-.mv-video {
-  width: 1920px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+    .mv-video {
+      width: 1920px;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
 
-/* 기본: PC */
-.pc-only {
-  display: flex;
-}
-.mo-only {
-  display: none;
-}
+    /* 기본: PC */
+    .pc-only {
+      display: flex;
+    }
+    .mo-only {
+      display: none;
+    }
 
-/* 모바일 */
-@media (max-width: 768px) {
-  .pc-only {
-    display: none;
-  }
-  .mo-only {
-    display: flex;
-    aspect-ratio: 9 / 16;
-    overflow: hidden;
-  }
+    /* 모바일 */
+    @media (max-width: 768px) {
+      .pc-only {
+        display: none;
+      }
+      .mo-only {
+        display: flex;
+        aspect-ratio: 9 / 16;
+        overflow: hidden;
+      }
 
-  .mo-only video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-</style>
+      .mo-only video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  </style>
   <body>
     <div class="eventTemplate">
       <div class="et_banner">
-  <!-- PC 영상 -->
+        <!-- PC 영상 -->
 
+        <div class="video-wrap pc-only">
+          <video
+            class="mv-video"
+            src="https://image.prospecs.com/front/images/planning/9836/mv/16x9_01.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+        </div>
 
-  
-  <div class="video-wrap pc-only">
-    <video
-      class="mv-video"
-      src="https://image.prospecs.com/front/images/planning/9836/mv/16x9_01.mp4"
-      autoplay
-      muted
-      loop
-      playsinline
-    ></video>
-  </div>
-
-  <!-- 모바일 영상 -->
-  <div class="video-wrap mo-only">
-    <video
-      class="mv-video"
-      src="https://image.prospecs.com/front/images/planning/9836/mv/9x16.mp4"
-      autoplay
-      muted
-      loop
-      playsinline
-    ></video>
-  </div>
-</div>
+        <!-- 모바일 영상 -->
+        <div class="video-wrap mo-only">
+          <video
+            class="mv-video"
+            src="https://image.prospecs.com/front/images/planning/9836/mv/9x16.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+        </div>
+      </div>
 
       <div class="et_container">
         <div class="et_eventWrap">
@@ -112,7 +111,10 @@
           <!-- 이미지영역 -->
           <div class="et_sectionWrap">
             <div class="et_section">
-              <img src="https://image.prospecs.com/front/images/planning/9836/images/step1.png" alt="" />
+              <img
+                src="https://image.prospecs.com/front/images/planning/9836/images/step1.png"
+                alt=""
+              />
               <div class="et_section_desc">
                 <span>STEP 1</span>
                 <p>
@@ -122,7 +124,10 @@
               </div>
             </div>
             <div class="et_section">
-              <img src="https://image.prospecs.com/front/images/planning/9836/images/step2.png" alt="" />
+              <img
+                src="https://image.prospecs.com/front/images/planning/9836/images/step2.png"
+                alt=""
+              />
               <div class="et_section_desc">
                 <span>STEP 2</span>
                 <p>
@@ -131,24 +136,35 @@
               </div>
             </div>
             <div class="et_section last-section">
-              <a href="javascript:;"><img src="https://image.prospecs.com/front/images/planning/9836/images/step3.png" alt="" /></a>
+              <a href="javascript:;"
+                ><img
+                  src="https://image.prospecs.com/front/images/planning/9836/images/step3.png"
+                  alt=""
+              /></a>
               <div class="et_section_desc">
                 <span>STEP 3</span>
                 <p>응모하기 클릭 후 당첨자 발표를 기다립니다.</p>
               </div>
             </div>
-                     <div class="caution-area">
-                        <p class="title">유의사항</p>
-                        <ul style="display: none">
-<li>해당 이벤트 페이지에 진열된 상품을 구매한 고객 대상으로 추첨이 진행됩니다.</li>
-<li>제품 취소/반품 시 추첨에서 제외됩니다.</li>
-<li>SMS 수신 미동의 시 추첨에서 제외됩니다.</li>
-<li>본 서울하프마라톤 참가권은 양도 및 재판매가 불가하며, 적발 시 참가 자격이 박탈됩니다.</li>
-<li>참가권 당첨자의 구매 제품은 취소 및 반품이 불가하오니 신중히 구매해 주세요.</li>
-
-
-                        </ul>
-                    </div>
+            <div class="caution-area">
+              <p class="title">유의사항</p>
+              <ul style="display: none">
+                <li>
+                  해당 이벤트 페이지에 진열된 상품을 구매한 고객 대상으로 추첨이
+                  진행됩니다.
+                </li>
+                <li>제품 취소/반품 시 추첨에서 제외됩니다.</li>
+                <li>SMS 수신 미동의 시 추첨에서 제외됩니다.</li>
+                <li>
+                  본 서울하프마라톤 참가권은 양도 및 재판매가 불가하며, 적발 시
+                  참가 자격이 박탈됩니다.
+                </li>
+                <li>
+                  참가권 당첨자의 구매 제품은 취소 및 반품이 불가하오니 신중히
+                  구매해 주세요.
+                </li>
+              </ul>
+            </div>
           </div>
           <!--// 이미지영역-->
         </div>
@@ -162,29 +178,38 @@
                 <span>카본플래쉬</span>
                 <span>PEBAX폼</span>
               </div>
-              </div>
-  <a href="https://www.prospecs.com/planning.do?cmd=getPlanningDetail&datacls=9836#planshop1">
-    <button type="button">제품보기</button>
-  </a>
-            <img src="https://image.prospecs.com/front/images/planning/9836/images/prd1.png" alt="" />
-          
+            </div>
+            <a
+              href="https://www.prospecs.com/planning.do?cmd=getPlanningDetail&datacls=9836#planshop1"
+            >
+              <button type="button">제품보기</button>
+            </a>
+            <img
+              src="https://image.prospecs.com/front/images/planning/9836/images/prd1.png"
+              alt=""
+            />
           </div>
-<div class="et_product">
-  <div class="et_product_content">
-    <strong>HYPER RUSH 2</strong>
-    <div class="et_product_list">
-      <span>카본플래쉬</span>
-      <span>초경량</span>
-      <span>슈퍼폼</span>
-    </div>
-  </div>
+          <div class="et_product">
+            <div class="et_product_content">
+              <strong>HYPER RUSH 2</strong>
+              <div class="et_product_list">
+                <span>카본플래쉬</span>
+                <span>초경량</span>
+                <span>슈퍼폼</span>
+              </div>
+            </div>
 
-  <a href="https://www.prospecs.com/planning.do?cmd=getPlanningDetail&datacls=9836#planshop2">
-    <button type="button">제품보기</button>
-  </a>
+            <a
+              href="https://www.prospecs.com/planning.do?cmd=getPlanningDetail&datacls=9836#planshop2"
+            >
+              <button type="button">제품보기</button>
+            </a>
 
-  <img src="https://image.prospecs.com/front/images/planning/9836/images/prd2.png" alt="" />
-</div>
+            <img
+              src="https://image.prospecs.com/front/images/planning/9836/images/prd2.png"
+              alt=""
+            />
+          </div>
 
           <div class="et_product">
             <div class="et_product_content">
@@ -196,68 +221,92 @@
                 <span>슈퍼라이트폼</span>
               </div>
             </div>
-              <a href="https://www.prospecs.com/planning.do?cmd=getPlanningDetail&datacls=9836#planshop3">
-    <button type="button">제품보기</button>
-  </a>
-            <img src="https://image.prospecs.com/front/images/planning/9836/images/prd3.png" alt="" />
+            <a
+              href="https://www.prospecs.com/planning.do?cmd=getPlanningDetail&datacls=9836#planshop3"
+            >
+              <button type="button">제품보기</button>
+            </a>
+            <img
+              src="https://image.prospecs.com/front/images/planning/9836/images/prd3.png"
+              alt=""
+            />
           </div>
           <div class="et_product">
             <div class="et_product_content">
               <strong>남성 러닝 의류</strong>
               <div class="et_product_list">
-                <span style="text-transform: uppercase;">Men’s running wear</span>
+                <span style="text-transform: uppercase"
+                  >Men’s running wear</span
+                >
               </div>
             </div>
-              <a href="https://www.prospecs.com/planning.do?cmd=getPlanningDetail&datacls=9836#planshop4">
-    <button type="button">제품보기</button>
-  </a>
-            <img src="https://image.prospecs.com/front/images/planning/9836/images/prd4.png" alt="" />
+            <a
+              href="https://www.prospecs.com/planning.do?cmd=getPlanningDetail&datacls=9836#planshop4"
+            >
+              <button type="button">제품보기</button>
+            </a>
+            <img
+              src="https://image.prospecs.com/front/images/planning/9836/images/prd4.png"
+              alt=""
+            />
           </div>
           <div class="et_product">
             <div class="et_product_content">
               <strong>여성 러닝 의류</strong>
               <div class="et_product_list">
-                <span style="text-transform: uppercase;">woemn’s running wear</span>
-                
+                <span style="text-transform: uppercase"
+                  >woemn’s running wear</span
+                >
               </div>
             </div>
-              <a href="https://www.prospecs.com/planning.do?cmd=getPlanningDetail&datacls=9836#planshop5">
-    <button type="button">제품보기</button>
-  </a>
-            <img src="https://image.prospecs.com/front/images/planning/9836/images/prd5.png" alt="" />
+            <a
+              href="https://www.prospecs.com/planning.do?cmd=getPlanningDetail&datacls=9836#planshop5"
+            >
+              <button type="button">제품보기</button>
+            </a>
+            <img
+              src="https://image.prospecs.com/front/images/planning/9836/images/prd5.png"
+              alt=""
+            />
           </div>
           <div class="et_product">
             <div class="et_product_content">
               <strong>러닝 용품</strong>
               <div class="et_product_list">
-              <span style="text-transform: uppercase;">running Accessories</span>
+                <span style="text-transform: uppercase"
+                  >running Accessories</span
+                >
               </div>
             </div>
-              <a href="https://www.prospecs.com/planning.do?cmd=getPlanningDetail&datacls=9836#planshop6">
-    <button type="button">제품보기</button>
-  </a>
-            <img src="https://image.prospecs.com/front/images/planning/9836/images/prd6.png" alt="" />
+            <a
+              href="https://www.prospecs.com/planning.do?cmd=getPlanningDetail&datacls=9836#planshop6"
+            >
+              <button type="button">제품보기</button>
+            </a>
+            <img
+              src="https://image.prospecs.com/front/images/planning/9836/images/prd6.png"
+              alt=""
+            />
           </div>
         </div>
         <!--//상품소개 영역-->
       </div>
     </div>
   </body>
-<script>
-  $(function () {
-    $('.caution-area .title').on('click', function () {
-      const $area = $('.caution-area');
-      const $list = $area.find('ul');
+  <script>
+    $(function () {
+      $(".caution-area .title").on("click", function () {
+        const $area = $(".caution-area");
+        const $list = $area.find("ul");
 
-      if ($area.hasClass('closed')) {
-        $list.slideDown();
-      } else {
-        $list.slideUp();
-      }
+        if ($area.hasClass("closed")) {
+          $list.slideUp();
+        } else {
+          $list.slideDown();
+        }
 
-      $area.toggleClass('closed');
+        $area.toggleClass("closed");
+      });
     });
-  });
-</script>
-
+  </script>
 </html>
